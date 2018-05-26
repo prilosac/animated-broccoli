@@ -1,0 +1,25 @@
+{
+  "name": "animated-broccoli",
+  "version": "1.0.0",
+  "description": "Test project for learning purposes",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prilosac/animated-broccoli.git"
+  },
+  "author": "prilo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prilosac/animated-broccoli/issues"
+  },
+  "homepage": "https://github.com/prilosac/animated-broccoli#readme",
+  "dependencies": {
+    "body-parser": "*",
+    "ejs": "^2.6.1",
+    "express": "*",
+    "mongojs": "^2.5.0"
+  }
+}
