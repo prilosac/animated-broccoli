@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false
+  apiEndpoint: 'http://138.68.20.168:3000/api'
 };
 
 /*
