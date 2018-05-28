@@ -15,7 +15,7 @@ app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
 
 // Set Static Folder (place for all the Angular stuff to live)
-app.use(express.static(path.join(__dirname, 'client')));
+app.use(express.static(path.join(__dirname, 'client/data-vis/dist')));
 
 // Body Parser Middleware
 app.use(bodyParser.json());
