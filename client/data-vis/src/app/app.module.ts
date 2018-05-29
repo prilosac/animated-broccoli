@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { RandomForestComponent } from './random-forest/random-forest.component';
 import { SVMComponent } from './svm/svm.component';
 import { BaggingComponent } from './bagging/bagging.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { BaggingComponent } from './bagging/bagging.component';
     HomeComponent,
     RandomForestComponent,
     SVMComponent,
-    BaggingComponent
+    BaggingComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
