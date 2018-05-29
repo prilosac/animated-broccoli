@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { RandomForestComponent } from './home/random-forest.component';
+import { RandomForestComponent } from './random-forest/random-forest.component';
 
 const routes: Routes = [
 	{
