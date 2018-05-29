@@ -1,26 +1,27 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <!-- <div style="text-align:center"> -->
+<nav class="navbar is-primary" role="navigation" aria-label="navbar">
+  <div class="navbar-brand">
+    <a routerLink="/" routerLinkActive="active"><i class="fas fa-cog fa-fw"></i>Home</a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-end">
+      <a class="navbar-item" routerLink="/about" routerLinkActive="active">about</a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <div class="navbar-link">services</div>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" routerLink="/random-forest" routerLinkActive="active">Random Forest Regression</a>
+          <a class="navbar-item" routerLink="/svm" routerLinkActive="active">Support Vector Machine</a>
+          <a class="navbar-item" routerLink="/bagging" routerLinkActive="active">Bagging</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
 <section class="hero is-primary">
   <div class="hero-body">
     <div class="container">
-      <nav class="navbar is-primary" role="navigation" aria-label="navbar">
-        <div class="navbar-brand">
-          <a routerLink="/" routerLinkActive="active"><i class="fas fa-cog fa-fw"></i>Home</a>
-        </div>
-        <div class="navbar-menu">
-          <div class="navbar-end">
-            <a class="navbar-item" routerLink="/about" routerLinkActive="active">about</a>
-            <div class="navbar-item has-dropdown is-hoverable">
-              <div class="navbar-link">services</div>
-              <div class="navbar-dropdown">
-                <a class="navbar-item" routerLink="/random-forest" routerLinkActive="active">Random Forest Regression</a>
-                <a class="navbar-item" routerLink="/svm" routerLinkActive="active">Support Vector Machine</a>
-                <a class="navbar-item" routerLink="/bagging" routerLinkActive="active">Bagging</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
       <h1 class="title is-1">Welcome</h1>
       <h1 class="subtitle">What do you want to know?</h1>
     </div>
