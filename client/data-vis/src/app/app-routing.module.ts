@@ -3,17 +3,14 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { RandomForestComponent } from './random-forest/random-forest.component';
+import { SVMComponent } from './svm/svm.component';
+import { BaggingComponent } from './bagging/bagging.component';
 
 const routes: Routes = [
-	{
-		path: '',
-		component: HomeComponent
-	},
-	{
-		path: 'random-forest',
-		component: RandomForestComponent
-	}
-
+	{ path: '', component: HomeComponent },
+	{ path: 'random-forest', component: RandomForestComponent },
+	{ path: 'svm', component: SVMComponent },
+	{ path: 'bagging', component: BaggingComponent }
 ];
 
 @NgModule({
