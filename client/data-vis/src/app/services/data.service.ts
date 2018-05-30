@@ -12,6 +12,6 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   getData() {
-  	return(this.http.get('/api/process-svm'));
+  	return(this.http.get(environment.apiEndpoint +'/process-svm'));
   }
 }
