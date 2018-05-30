@@ -23,7 +23,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.use('/', index);
-app.use('/api', tasks);
+app.use('/api', dataProcess);
+
 
 app.listen(srvPort, function(){
 	console.log('Server started on port ' + srvPort + '...');
