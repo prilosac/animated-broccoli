@@ -15,11 +15,11 @@ export class SVMComponent implements OnInit {
 
   ngOnInit() {
   	this.getData();
+  	console.log("Data is: " + this.data);
   }
 
   getData(): void {
   	this.dataService.getData().subscribe(data => this.data = data);
-  	console.log("Data is: " + this.data);
   }
 
 }
