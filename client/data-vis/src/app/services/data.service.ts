@@ -12,7 +12,6 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   getData(): {
-  	return(this.http.get('/api/process-svm'))
-  	//return of(MockData);
+  	return(this.http.get('/api/process-svm'));
   }
 }
