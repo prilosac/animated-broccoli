@@ -18,7 +18,7 @@ export class SVMComponent implements OnInit {
   }
 
   getData(): void {
-  	this.data = this.dataService.getData().subscribe(data => this.data = data);
+  	this.dataService.getData().subscribe(data => this.data = data);
   }
 
 }
