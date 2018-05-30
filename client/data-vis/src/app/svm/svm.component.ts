@@ -15,7 +15,6 @@ export class SVMComponent implements OnInit {
 
   ngOnInit() {
   	this.getData();
-  	console.log("Data is: " + this.data);
   }
 
   getData(): void {

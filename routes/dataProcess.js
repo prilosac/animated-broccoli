@@ -10,6 +10,10 @@ router.get('/process-svm', function(req, res, next){
 		{
 			"id": 2, 
 			"value": "But like me too yo."
+		},
+		{
+			"id": 3, 
+			"value": "Do I work too? Dope."
 		}
 	];
 		//{id: 2, value: "But like, me too"}
