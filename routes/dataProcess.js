@@ -7,7 +7,7 @@ router.get('/process-svm', function(req, res, next){
 		"value": "I'm a datum!"
 	};
 		//{id: 2, value: "But like, me too"}
-	res.json(response);
+	res.send(response);
 	//res.render('index.html');
 });
 
