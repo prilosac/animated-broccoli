@@ -11,14 +11,14 @@ export class SVMComponent implements OnInit {
 
   data: Data[];
 
-  constructor(private heroService: HeroService) { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
   	this.getData();
   }
 
   getData(): void {
-  	this.data = this.heroService.getData();
+  	this.data = this.dataService.getData();
   }
 
 }
