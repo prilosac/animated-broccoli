@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { HTTPClient } from '@angular/common/http'
 import { Observable, of } from 'rxjs';
 import { Data } from '../data';
 import { MockData } from '../mock-data';
@@ -8,9 +9,10 @@ import { MockData } from '../mock-data';
 })
 export class DataService {
 
-  constructor() { }
+  constructor(private http: HTTPClient) { }
 
   getData(): Observable<Data[]> {
-  	return of(MockData);
+  	return of(this.http.get('/api/process-svm'))
+  	//return of(MockData);
   }
 }

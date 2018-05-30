@@ -8,6 +8,7 @@ import { RandomForestComponent } from './random-forest/random-forest.component';
 import { SVMComponent } from './svm/svm.component';
 import { BaggingComponent } from './bagging/bagging.component';
 import { AboutComponent } from './about/about.component';
+import { HTTPClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { AboutComponent } from './about/about.component';
   ],
   imports: [
     BrowserModule,
+    HTTPClientModule,
     AppRoutingModule
   ],
   providers: [],
