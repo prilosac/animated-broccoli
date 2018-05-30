@@ -24,6 +24,11 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 app.use('/', index);
 app.use('/api', dataProcess);
+app.use(function(res, req, next){
+	res.setHeader('Access-Control-Allow-Origin', 'http://localhost:4200');
+	res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT');
+	next();
+})
 
 
 app.listen(srvPort, function(){
