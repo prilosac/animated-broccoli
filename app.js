@@ -15,6 +15,12 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
 
+app.use(function(res, req, next){
+	res.setHeader('Access-Control-Allow-Origin', 'http://138.68.20.168:4200');
+	res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT');
+	next();
+})
+
 // Set Static Folder (place for all the Angular stuff to live)
 app.use(express.static(path.join(__dirname, 'client/data-vis/dist')));
 
@@ -24,11 +30,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 app.use('/', index);
 app.use('/api', dataProcess);
-app.use(function(res, req, next){
-	res.setHeader('Access-Control-Allow-Origin', 'http://138.68.20.168:4200');
-	res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT');
-	next();
-})
+
 
 
 app.listen(srvPort, function(){
