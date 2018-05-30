@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HTTPClient } from '@angular/common/http'
+import { HTTPClient } from '@angular/http'
 import { Observable, of } from 'rxjs';
 import { Data } from '../data';
 import { MockData } from '../mock-data';

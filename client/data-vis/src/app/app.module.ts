@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HTTPClientModule } from '@angular/common/http';
+import { HTTPClientModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './/app-routing.module';
