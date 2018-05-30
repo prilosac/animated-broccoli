@@ -9,7 +9,7 @@ import { DataService } from '../services/data.service';
 })
 export class SVMComponent implements OnInit {
 
-  data: {};
+  data: [];
 
   constructor(private dataService: DataService) { }
 
