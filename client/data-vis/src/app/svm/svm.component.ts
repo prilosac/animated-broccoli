@@ -19,7 +19,7 @@ export class SVMComponent implements OnInit {
 
   getData(): void {
   	this.dataService.getData().subscribe(data => this.data = data);
-  	console.log(this.data);
+  	console.log("Data is: " + this.data);
   }
 
 }
