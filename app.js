@@ -16,9 +16,9 @@ app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
 
 app.use(function(res, req, next){
-	res.setHeader('Access-Control-Allow-Origin', 'http://138.68.20.168:4200');
-	res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT');
-	res.setheader('Access-Control-Allow-Headers', 'Content-Type');
+	res.header('Access-Control-Allow-Origin', '*');
+	// res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT');
+	// res.setheader('Access-Control-Allow-Headers', 'Content-Type');
 	next();
 })
 
