@@ -12,7 +12,7 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   getData(): Observable<Data[]> {
-  	return of(this.http.get('/api/process-svm'))
+  	return(this.http.get('/api/process-svm'))
   	//return of(MockData);
   }
 }
