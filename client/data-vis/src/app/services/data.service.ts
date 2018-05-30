@@ -9,7 +9,7 @@ import { MockData } from '../mock-data';
 })
 export class DataService {
 
-  constructor(private http: HTTPClient) { }
+  constructor(private http: HttpClient) { }
 
   getData(): Observable<Data[]> {
   	return of(this.http.get('/api/process-svm'))

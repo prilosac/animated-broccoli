@@ -22,7 +22,7 @@ import { AboutComponent } from './about/about.component';
   ],
   imports: [
     BrowserModule,
-    HTTPClientModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],
