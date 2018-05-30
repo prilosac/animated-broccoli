@@ -9,7 +9,7 @@ import { DataService } from '../services/data.service';
 })
 export class SVMComponent implements OnInit {
 
-  data: [];
+  data: Data[];
 
   constructor(private dataService: DataService) { }
 
@@ -19,7 +19,7 @@ export class SVMComponent implements OnInit {
   }
 
   getData(): void {
-  	this.dataService.getData().subscribe(data => this.data = data);
+  	this.dataService.getData(1).subscribe((data: Data[]) => this.data = data);
   }
 
 }

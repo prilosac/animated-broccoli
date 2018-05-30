@@ -20,6 +20,15 @@
 							</figure>
 						</div>
 					</div>
+					<div class="columns">
+						<div class="column">
+							<ul class="data">
+							  <li *ngFor="let datum of data">
+							    <span>{{ datum.id }})</span> {{ datum.value }}
+							  </li>
+							</ul>
+						</div>
+					</div>
 				</div>
 				<div class="card-footer">
 					<div class="card-footer-item">
